@@ -1,5 +1,5 @@
 import React from "react";
-import { testActionHome } from "./actions";
+import { testActionTestPage } from "../actions";
 
 export function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -10,7 +10,7 @@ export default async function HomePage() {
   return (
     <div>
       <p>Time: {new Date().getTime()}</p>
-      <form action={testActionHome}>
+      <form action={testActionTestPage}>
         <button>Submit</button>
       </form>
     </div>
